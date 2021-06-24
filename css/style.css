@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/*리셋*/
+*{margin: 0; padding: 0;
+	box-sizing: border-box;}
+ul,li{list-style: none;}
+a{text-decoration: none; 
+	color: inherit;	display: block;}
+img{border: 0;}
+body{width: 100%;	min-width: 1200px;
+	background:#dcc7bd;	color: #462929;}
+
+	/*헤더영역*/
+header{
+	position:relative;
+	width: 100%;
+	height: 100%;
+}
+header.wrap{
+	position: absolute;
+	width: 100%;
+	height: 80px;
+}
+	/*고정헤더*/
+.top{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%; min-width: 1200px; 
+	height: 80px;
+	display: flex;
+	justify-content: flex-start;
+	z-index: 99999;
+	background:#000;
+	border-bottom: 1px solid #dcc7bd;
+}
+
+
+.top h1{	/*로고*/
+	position: relative;
+	width: 15%;
+	height: 80px;
+	font-size: 36px;
+	color: #fff;
+	line-height: 80px;
+	padding-left: 1.5%;
+	text-shadow: 2px 2px 2px #c0ce40;
+}
+.top nav{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 65%;
+	height:80px;
+}
+.top ul.gnb{	/*메인메뉴*/
+	position: relative;
+	top: 30px;
+	left: 0;
+	width: 70%;
+	height: 50px; 
+	display: flex;
+	justify-content: baseline;
+}
+.top ul.gnb>li{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	font-size: 17px;
+	line-height: 50px;
+	color: #dcc7bd;
+}
+.top ul.gnb>li>a{
+	font-weight: bold;
+}
+.top ul.gnb>li>a:hover{
+	color: #fff;
+}
+.top ul.gnb>li ul.sub{ /*서브메뉴*/
+	position: absolute;
+	top: 50px; 
+	left: 0;
+	width: 100%;
+	height: 250px;
+	display: none;
+}
+.top ul.gnb>li ul.sub>li{ 
+	position: relative;
+	width: 120px;
+	height: 40px;
+	line-height: 30px; 
+	font-size: 15px;
+}
+.top ul.gnb>li ul.sub>li:hover{ 
+	color: #c0ce40;
+}
+.top ul.icon{
+	width: 20%;
+	height: 80px; 
+	display: flex;
+	justify-content: flex-end;
+	font-size: 14px;
+	color: #dcc7bd;
+}
+.top ul.icon>li{
+	padding: 10px;
+}
+.top ul.icon>li:hover{
+	color: #fff;
+}
+/*컨테이너*/
+.container{
+	position: relative;
+  width: 100%; 
+	min-width: 1200px;
+	height: auto;
+  background-image: url(/img/mainslide1.jpg) cover;
+}
+.container ul.mainslide{
+	position: relative;
+	top: 0;
+	left: 0;
+	width:100%; min-width: 1200px;
+	height:100%;
+	border: 1px solid salmon;
+
+}
+.container ul.mainslide>li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border: 1px solid salmon;
+
+}
+.container ul.mainslide>li>img{
+	width:100%;
+}
+
+
+	/*푸터*/
+footer{
+	position: relative;
+  width: 100%;
+  height: 150px; 
+  background: #462929;
+}
+
+
+
+/* a{background: #8a5757;} */
